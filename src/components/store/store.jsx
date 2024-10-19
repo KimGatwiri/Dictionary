@@ -1,6 +1,6 @@
 import { create } from 'zustand';
 
-const useDictionaryStore = create((set) => ({
+const useSearchStore = create((set) => ({
   word: '',
   definitions: [],
   error: null,
@@ -34,4 +34,4 @@ const useDictionaryStore = create((set) => ({
   },
 }));
 
-export default useDictionaryStore;
+export default useSearchStore;

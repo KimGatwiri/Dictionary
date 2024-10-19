@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import useDictionaryStore from './store/store'; 
+import useSearchStore from './store/store'; 
 import './dictionary.css';
 const Dictionary = () => {
   const [input, setInput] = useState('');
-  const { definitions, error, fetchDefinitions } = useDictionaryStore();
+  const { definitions, error, fetchDefinitions } = useSearchStore();
 
   
   const handleSearch = () => {
